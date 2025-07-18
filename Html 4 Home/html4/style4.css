@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+}
+
+footer {
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.yt {
+  background-image: url("icons/youtube.png");
+}
+
+.fb {
+  background-image: url("icons/facebook.png");
+}
+
+.tw {
+  background-image: url("icons/twitter.png");
+}
+

@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 200px;
+}
+
+.menu li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background-color: #ddd;
+}
+
+.menu li img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
