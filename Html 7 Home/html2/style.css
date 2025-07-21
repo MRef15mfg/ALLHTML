@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #eef;
+}
+
+.shutters {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  border: 2px solid #000;
+}
+
+.shutter {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #555;
+  transition: transform 2s;
+  z-index: 2;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.hidden-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.shutters:hover .left {
+  transform: translateX(-100%);
+}
+
+.shutters:hover .right {
+  transform: translateX(100%);
+}

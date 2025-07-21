@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ddd;
+}
+
+.block {
+  display: flex;
+  width: 800px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.text, .image {
+  width: 50%;
+  height: 100%;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-size: 24px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s;
+}
+
+.block::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0);
+  transition: background 0.3s;
+  z-index: 2;
+}
+
+.block:hover::before {
+  background: rgba(0,0,0,0.5);
+}
+
+.block:hover img {
+  transform: scale(1.1);
+}
